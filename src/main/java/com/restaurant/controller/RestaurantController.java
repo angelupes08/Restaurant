@@ -18,4 +18,10 @@ public class RestaurantController {
 
         return "Restaurant is opened"+restaurantService.restaurantService();
     }
+
+    @GetMapping("/name")
+    public String getName(){
+
+        return "Taj Palace";
+    }
 }
