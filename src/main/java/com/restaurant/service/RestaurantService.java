@@ -9,4 +9,9 @@ public class RestaurantService {
 
         return "Welcome to our restaurant";
     }
+
+    public String getName(){
+
+        return "Tulip Inn";
+    }
 }
