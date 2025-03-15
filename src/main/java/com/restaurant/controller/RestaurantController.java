@@ -10,10 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/restaurant")
 public class RestaurantController {
 
-    @Autowired
     RestaurantService restaurantService;
 
-    @GetMapping("")
+    public RestaurantController(RestaurantService restaurantService){
+
+        this.restaurantService=restaurantService;
+    }
+
+
+
+    @GetMapping("")//jgvjh.v;h
     public String getResponse(){
 
         return "Restaurant is opened"+restaurantService.restaurantService();
@@ -22,6 +28,6 @@ public class RestaurantController {
     @GetMapping("/name")
     public String getName(){
 
-        return "Taj Palace";
+        return "Taj Palace";//hehheheh
     }
 }
